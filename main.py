@@ -22,11 +22,13 @@ class LittleRascalApp(QMainWindow):
 
     def create_section_one(self, parent_layout):
         # Section 1: Clear and Secure buttons
-        section_one = QGroupBox("Section 1")
+        section_one = QGroupBox()
         layout = QVBoxLayout()
 
         clear_button = QPushButton("Clear")
+        clear_button.setStyleSheet("background-color: lightblue;")
         secure_button = QPushButton("Secure")
+        secure_button.setStyleSheet("background-color: red;")
 
         layout.addWidget(clear_button)
         layout.addWidget(secure_button)
@@ -36,7 +38,7 @@ class LittleRascalApp(QMainWindow):
 
     def create_section_two(self, parent_layout):
         # Section 2: Text display, Next and Delete buttons
-        section_two = QGroupBox("Section 2")
+        section_two = QGroupBox()
         layout = QVBoxLayout()
 
         # Text display
@@ -59,7 +61,7 @@ class LittleRascalApp(QMainWindow):
 
     def create_section_three(self, parent_layout):
         # Section 3: Numeric buttons (0-9) and SELECT
-        section_three = QGroupBox("Section 3")
+        section_three = QGroupBox()
         layout = QGridLayout()
 
         # Row 1: 0, 1, 2, 3
@@ -84,7 +86,7 @@ class LittleRascalApp(QMainWindow):
 
     def create_section_four(self, parent_layout):
         # Section 4: Letter buttons and special function buttons
-        section_four = QGroupBox("Section 4")
+        section_four = QGroupBox()
         layout = QGridLayout()
 
         # Row 1: A, B, +, Enter
